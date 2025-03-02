@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garbage Collector Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Garbage Collector Portal</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="client.html">Client Portal</a>
+        <a href="collector.html">Garbage Collector Portal</a>
+    </nav>
+    <main>
+        <form id="collectorForm">
+            <label for="collectorName">Name:</label>
+            <input type="text" id="collectorName" required><br><br>
+
+            <label for="collectorPhoto">Photo:</label>
+            <input type="file" id="collectorPhoto" accept="image/*"><br><br>
+
+            <label for="collectorLocation">Location:</label>
+            <input type="text" id="collectorLocation" required><br><br>
+
+            <label for="maxCollection">Max Collection (kgs):</label>
+            <input type="number" id="maxCollection" min="1" max="100" required><br><br>
+
+            <label for="paymentDetails">Payment Details:</label>
+            <textarea id="paymentDetails" required></textarea><br><br>
+
+            <label for="availableDates">Available Dates (Weekdays):</label>
+            <input type="text" id="availableDates" placeholder="e.g., Mon, Wed, Fri" required><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Waste Reduction App</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
